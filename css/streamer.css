@@ -1,0 +1,14 @@
+.streamer-top{width: 100%;height: 66px;background: #FFF;box-shadow:  0px 4px 3px rgba(1,1,1,0.1);position: fixed;top: 0;user-select: none;}
+.streamer-left{width: 200px;border-right: 1px solid #CCC;height: 100%;float: left;padding-top: 66px;box-sizing: border-box;}
+.streamer-right{width: calc(100% - 201px);min-height: 100%;height: auto;background: #F5F5F5;float: left;z-index: ;}
+.streamer-left-play-btn{border-radius: 24px;width: 80%;margin-left: 10%;margin-top: 26px;margin-bottom: 26px;background: #FF5D23;cursor: pointer;text-align: center;height: 42px;line-height: 42px;color: #FFF;}
+.streamer-left-play-btn:hover{background: #EE7801;}
+.streamer-left-li{width: 100%;height: 50px;cursor: pointer;position: relative;user-select: none;}
+.streamer-left-li:hover{background-color: #F5F5F5;}
+.streamer-left-li-icon{width: 30%;position: relative;float: left;left: 0;}
+.streamer-left-li-icon-img{position: absolute;right: 10px;top: 17px;height: 16px;width: 16px;}
+.streamer-left-li-text{width: 70%;margin-left:10px;height: 50px;line-height: 50px;color: #333;position: absolute;left: 30%;}
+.streamer-top-logo{margin-left: 40px;height: 46px;margin-top:10px;float: left;}
+.streamer-top-logo img{height: 46px;width:64px ;}
+.streamer-top-logo-text{height: 66px;line-height: 66px;float: left;margin-left: 12px;font-size: 24px;font-weight: bold;color: #FE7801;}
+.streamer-top-sculpt{width: 40px;height: 40px;border-radius: 100%;position: absolute;right: 100px;top: 13px;cursor: pointer;}

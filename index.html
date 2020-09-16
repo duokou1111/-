@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link href="./css/common.css" rel="stylesheet" type="text/css" />
+		<link href="./css/index.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="./img/logo.ico" type="images/x-ico" />
+		<script src="./js/md5.js"></script>
+		<script src="./js/jquery.js"></script>
+		<script src="./js/flv.min.js"></script>
+		<script src="./js/common.js"></script>
+		<script src="./js/request/userRequest.js"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+		<title>斗狗-每个人的直播平台</title>
+	</head>
+	<body style="min-width: 970px;">
+		<div class="index-mask"></div>
+		<div class="index-login-box">
+			<div class="index-login-box-msg"></div>
+			<img class="index-login-box-close" src="img/close.png">
+			<div class="index-login-box-top">用户名登录</div>
+			<div class="index-login-box-inputBox"><input id="username" placeholder="用户名" class="index-login-box-inputBox-input" type="text"></div>
+			<div class="index-login-box-inputBox"><input id="pwd" placeholder="密码" class="index-login-box-inputBox-input" type="password"></div>
+			<div class="index-login-box-btn">登 录</div>
+			<div class="index-login-box-logo"><img src="img/logo.png"></div>
+		</div>
+		<div class="index-top">
+			<div class="index-top-bar">
+				<div class="index-top-bar-logo"><img src="./img/logo.png"></div>
+				<a class="active">首页</a>
+				<a>直播</a>
+				<a>分类</a>
+				<a>视频</a>
+				<a>狗吧</a>
+				<div class="index-avator-box"><img src="img/login.png"/></div> 
+				<div class="index-user-bar"><a>历史</a><a>关注</a><a href="streamer.html">开播</a></div>
+				<div class="index-search-box"><input placeholder="主播  分类" type="text" id="index-search-input"/><img src="img/search.png"></div>
+				<div class="index-user-box">
+					<span class="index-user-box-hi">Hi!</span>
+					<div class="index-user-box-logout"><div id="index-logout"><img src="img/logout.png"><span>登出</span></div></div>
+					<div class="index-user-box-sculpt"><img class="index-user-box-sculpt-img" src="img/login.png"></div>
+					<div class="index-user-box-username">WuZihan</div>
+					<div class="index-user-box-bar">
+						<div class="index-user-box-bar-box">
+							<div class="index-user-box-bar-box-sculpt"><img src="img/icon-mine.png"></div>
+							<div class="index-user-box-bar-box-text">个人中心</div>
+						</div>
+						<div class="index-user-box-bar-box">
+							<div class="index-user-box-bar-box-sculpt"><img src="img/icon-subcribe.png"></div>
+							<div class="index-user-box-bar-box-text">我的关注</div>
+						</div>
+						<div class="index-user-box-bar-box">
+							<div class="index-user-box-bar-box-sculpt"><img src="img/icon-play.png"></div>
+							<div class="index-user-box-bar-box-text">我要开播</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="index-top-video">
+				<div class="index-top-video-left">
+					<video name="videoElement" muted class="centeredVideo" id="videoElement" controls width="1024" height="576" autoplay>
+					    Your browser is too old which doesn't support HTML5 video.
+					</video>
+					<div class="index-top-video-left-enter">进入直播间</div>
+				</div>
+				<div class="index-top-video-right">
+					<div class="index-top-video-right-box index-top-video-right-onplay">
+						<div class="triangle index-top-video-right-box-triangle"></div>
+					</div>
+					<div class="index-top-video-right-box">
+						<div class="triangle index-top-video-right-box-triangle"></div>
+					</div>
+					<div class="index-top-video-right-box">
+						<div class="triangle index-top-video-right-box-triangle"></div>
+					</div>
+					<div class="index-top-video-right-box">
+						<div class="triangle index-top-video-right-box-triangle"></div>
+					</div>
+					<div class="index-top-video-right-box">
+						<div class="triangle index-top-video-right-box-triangle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./js/index.js"></script>
+</html>

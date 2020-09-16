@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>flv.js demo</title>
+
+    <style>
+        .mainContainer {
+            display: block;
+            width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .urlInput {
+            display: block;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .centeredVideo {
+            display: block;
+            width: 100%;
+            height: 576px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+        }
+
+        .controls {
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 8px;
+            margin-bottom: 10px;
+        }
+
+        .logcatBox {
+            border-color: #CCCCCC;
+            font-size: 11px;
+            font-family: Menlo, Consolas, monospace;
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+        <script src="js/flv.min.js"></script>
+		<script src="./js/jquery.js"></script>
+    <div class="mainContainer">
+        <video name="videoElement" class="centeredVideo" id="videoElement" controls width="1024" height="576" autoplay>
+            Your browser is too old which doesn't support HTML5 video.
+        </video>
+
+    </div>
+       <script>
+		   $("#videoElement").click(function(){
+		   var url ="http://39.97.172.21/live?port=1935&app=myapp&stream=wzh";
+           if (flvjs.isSupported()) {
+               var videoElement = document.getElementById('videoElement');
+               var flvPlayer = flvjs.createPlayer({
+                   type: 'flv',
+				   enableWorker: true, 
+				   isLive: true,                  
+				   hasVideo: true,
+				   stashInitialSize: 128,  
+				   enableStashBuffer: false,
+                   url: 'http://39.97.172.21/live?port=1935&app=myapp&stream=wzh'
+               });
+               flvPlayer.attachMediaElement(videoElement);
+               flvPlayer.load();
+               flvPlayer.play();
+           }
+		   });
+       </script>
+    
+</body>
+
+</html>
