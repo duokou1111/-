@@ -15,7 +15,7 @@ function loginRequest(username,password,callback){
 				   $.cookie('token',xhr.getResponseHeader("token"), {expires: date});
 	            },
 	            error : function(e){
-	              callback(false,result);
+	              callback(false,e);
 	            }
 	        });
 }

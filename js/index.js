@@ -61,6 +61,9 @@ $("#index-logout").click(function(){
 	removeCookie("token");
 	location.reload();
 })
+$(".index-user-box-bar-box").click(function(){
+	window.location.href = BASE_FRONT_URL+$(this).attr("href");
+})
 function afterLoginRequest(isSuccess,data){
 	if(isSuccess ==  true){
 		console.log(data.status);
@@ -70,7 +73,7 @@ function afterLoginRequest(isSuccess,data){
 	}else{
 		console.log(data.status);
 		console.log(data.responseText);
-		var obj = JSON.parse(e.responseText)
+		var obj = JSON.parse(data.responseText)
 		$(".index-login-box-msg").show();
 		$(".index-login-box-msg").html(obj.message);
 		$(".index-login-box-msg").fadeOut(3000)
